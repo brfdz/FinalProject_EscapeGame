@@ -7,7 +7,6 @@ using UnityEngine;
 
 public class KeyInteraction : Interactable
 {
-    
     public int keyID;
 
     private void Start()
@@ -18,8 +17,10 @@ public class KeyInteraction : Interactable
 
     public override void Interaction(Collider other)
     {
-        //Inventory.InventoryItem myKey = new Inventory.InventoryItem("key", keyID);
-        other.GetComponent<Inventory>().inventory.Add("key", keyID);
+       //Unlock the door
+       //Trigger unlock event
+       GameEvents.Instance.UnlockDoor(keyID);
+       
         Destroy(gameObject);
        
     }

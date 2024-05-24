@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    //public List<InventoryItem> inventory;
     public Dictionary<string, int> inventory;
     
     public struct InventoryItem

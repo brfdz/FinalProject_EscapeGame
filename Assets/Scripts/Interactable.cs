@@ -9,8 +9,8 @@ public abstract class Interactable : MonoBehaviour
     public GameObject infoPanel;
     private void OnTriggerEnter(Collider other)
     {
+        //Show key press message
         infoPanel.SetActive(true);
-        
     }
     
     private void OnTriggerStay(Collider other)
@@ -34,7 +34,6 @@ public abstract class Interactable : MonoBehaviour
         if (infoPanel != null)
         {
             infoPanel.SetActive(false);
-
         }
     }
 }
