@@ -19,7 +19,6 @@ public class PlayerMovementController : MonoBehaviour
     //crouch variables
     private float CrouchHeight = 0.7f;
     private float StandingHeight = 2.5f;
-    private float TimeToCrouch = 0.25f;
     private bool isCrouching;
     private KeyCode crouchKey = KeyCode.C;
 
